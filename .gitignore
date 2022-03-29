@@ -1,0 +1,11 @@
+/.idea
+/.vscode/*
+!/.vscode/launch.json
+/__pycache__
+*.swp
+/main.in
+/main.py
+/solution.py
+/oj.py
+/oj.in
+.DS_Store

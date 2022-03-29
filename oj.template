@@ -1,0 +1,12 @@
+import sys
+import os
+
+f = sys.stdin
+if os.getenv('IS_DEBUG_PYTHON') == 'true':
+    f = open('oj.in')
+
+with f:
+    s = f.readline()
+    x = 9
+    y = int(s)
+    print(x < y)

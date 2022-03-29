@@ -1,0 +1,32 @@
+from typing import List, Optional
+
+
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+class Solution:
+    def isSymmetric(self, root: TreeNode) -> bool:
+        if not root:
+            return True
+        stk = []
+        stk.append(root.left)
+        stk.append(root.right)
+        while stk:
+            a = stk.pop()
+            b = stk.pop()
+            if not a and not b:
+                continue
+            if not a or not b:
+                return False
+            if a.val != b.val:
+                return False
+            stk.append(a.left)
+            stk.append(b.right)
+            stk.append(a.right)
+            stk.append(b.left)
+        return True

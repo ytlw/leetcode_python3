@@ -1,0 +1,11 @@
+import solution
+import treenode
+
+
+if __name__ == '__main__':
+    solution = solution.Solution()
+    with open('main.in', 'r') as f:
+        str = f.readline()
+        root = treenode.stringToTreeNode(str)
+        ans = solution.isSymmetric(root)
+        print(ans)
