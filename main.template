@@ -8,11 +8,12 @@ def wrapper(func):
     return inner
 
 
-input = wrapper(open('oj.in'))
+input = wrapper(open('main.in'))
 
 if __name__ == '__main__':
     solution = solution.Solution()
-    str = input()
-    root = treenode.stringToTreeNode(str)
+    s = input()
+    root = treenode.stringToTreeNode(s)
     ans = solution.isSymmetric(root)
     print(ans)
+
