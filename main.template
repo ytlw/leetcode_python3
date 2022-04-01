@@ -17,3 +17,6 @@ if __name__ == '__main__':
     ans = solution.isSymmetric(root)
     print(ans)
 
+# input
+# [1,2,2,3,4,4,3]
+# [1,2,2,null,3,null,3]
