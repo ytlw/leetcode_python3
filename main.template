@@ -1,6 +1,6 @@
 from solution import *
 from treenode import *
-
+from listnode import *
 
 def wrapper(func):
     def inner():
@@ -11,9 +11,9 @@ def wrapper(func):
 input = wrapper(open('main.in'))
 
 if __name__ == '__main__':
-    solution = Solution()
-    s = input()
-    root = stringToTreeNode(s)
+    solution = solution.Solution()
+    str = input()
+    root = stringToTreeNode(str)
     ans = solution.isSymmetric(root)
     print(ans)
 
