@@ -5,6 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: kickstart",
+            "type": "python",
+            "request": "launch",
+            "program": "kickstart.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
             "name": "Python: solution",
             "type": "python",
             "request": "launch",
